@@ -125,11 +125,11 @@ export function CalculadoraCusto() {
   return (
     <section id="calculadora" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">Calculadora de Custos</h2>
+        <h2 className="text-3xl font-bold text-center mb-10 text-black">Calculadora de Custos</h2>
         <div className="max-w-4xl mx-auto">
           <Card className="bg-white shadow-sm mb-8">
             <CardHeader>
-              <CardTitle className="text-gray-700">Selecione o Veículo</CardTitle>
+              <CardTitle className="text-black">Selecione o Veículo</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="space-y-2">
@@ -155,7 +155,7 @@ export function CalculadoraCusto() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card className="bg-white shadow-sm">
               <CardHeader>
-                <CardTitle className="text-gray-700">Dados do Veículo</CardTitle>
+                <CardTitle className="text-black">Dados do Veículo</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-1 gap-4">
@@ -233,7 +233,7 @@ export function CalculadoraCusto() {
 
             <Card className="bg-white shadow-sm">
               <CardHeader>
-                <CardTitle className="text-gray-700">Custos Fixos Anuais</CardTitle>
+                <CardTitle className="text-black">Custos Fixos Anuais</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-1 gap-4">
@@ -311,7 +311,7 @@ export function CalculadoraCusto() {
             <Button
               onClick={calcularCustoAnual}
               size="lg"
-              className="bg-gray-800 hover:bg-gray-700 text-white px-8 py-6 text-lg"
+              className="bg-black hover:bg-gray-900 text-white px-8 py-6 text-lg"
             >
               Calcular Custo Anual
             </Button>
@@ -321,20 +321,20 @@ export function CalculadoraCusto() {
             <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
               <Card className="bg-white shadow-sm border-t-4 border-t-green-500">
                 <CardHeader>
-                  <CardTitle className="text-gray-700">Custo com Combustível</CardTitle>
+                  <CardTitle className="text-black">Custo com Combustível</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="text-3xl font-bold text-gray-900">{formatarValor(resultados.custoCombustivel)}</div>
+                  <div className="text-3xl font-bold text-black">{formatarValor(resultados.custoCombustivel)}</div>
                   <p className="text-gray-500 mt-2">por ano</p>
                 </CardContent>
               </Card>
 
               <Card className="bg-white shadow-sm border-t-4 border-t-blue-500">
                 <CardHeader>
-                  <CardTitle className="text-gray-700">Custo Total Anual</CardTitle>
+                  <CardTitle className="text-black">Custo Total Anual</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="text-3xl font-bold text-gray-900">{formatarValor(resultados.custoTotal)}</div>
+                  <div className="text-3xl font-bold text-black">{formatarValor(resultados.custoTotal)}</div>
                   <p className="text-gray-500 mt-2">todos os custos incluídos</p>
                 </CardContent>
               </Card>

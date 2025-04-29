@@ -31,10 +31,15 @@ export function Header() {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <Car className="h-6 w-6 text-gray-700" />
-          <h1 className="text-xl font-medium text-gray-800">Calculadora de Custo Anual de Carro</h1>
+          <Car className="h-6 w-6 text-black" />
+          <div>
+            <h1 className="text-xl font-medium text-black">Calculadora de Custo Anual</h1>
+            <p className="text-sm text-gray-600 font-medium">
+              por <span className="text-blue-600">AutoFinance</span>
+            </p>
+          </div>
         </div>
-        <Button onClick={scrollToCalculator} className="bg-gray-800 hover:bg-gray-700">
+        <Button onClick={scrollToCalculator} className="bg-black hover:bg-gray-900">
           Calcule agora
         </Button>
       </div>

@@ -4,7 +4,7 @@ export function Faq() {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">Perguntas Frequentes</h2>
+        <h2 className="text-3xl font-bold text-center mb-10 text-black">Perguntas Frequentes</h2>
 
         <div className="max-w-3xl mx-auto">
           <Accordion type="single" collapsible className="w-full">
@@ -72,6 +72,40 @@ export function Faq() {
                   manutenção adequada, condições de uso e qualidade do veículo podem estender ou reduzir
                   significativamente essa média. Veículos bem mantidos podem durar muito mais tempo com bom desempenho e
                   segurança.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-6">
+              <AccordionTrigger>Como é feito o cálculo do custo anual?</AccordionTrigger>
+              <AccordionContent>
+                <p className="text-gray-600">
+                  O cálculo do custo anual é feito considerando todos os gastos relacionados ao veículo:
+                </p>
+                <ul className="list-disc pl-5 mt-2 space-y-1 text-gray-600">
+                  <li>
+                    <strong>Combustível:</strong> (Quilometragem mensal × 12) ÷ Consumo médio × Preço da gasolina
+                  </li>
+                  <li>
+                    <strong>Seguro:</strong> Valor anual da apólice
+                  </li>
+                  <li>
+                    <strong>IPVA:</strong> Geralmente 3-4% do valor do veículo, dependendo do estado
+                  </li>
+                  <li>
+                    <strong>Licenciamento:</strong> Taxa anual fixa
+                  </li>
+                  <li>
+                    <strong>Manutenção:</strong> Revisões, trocas de óleo, pneus, etc.
+                  </li>
+                  <li>
+                    <strong>Depreciação:</strong> Perda de valor do veículo ao longo do ano
+                  </li>
+                  <li>
+                    <strong>Outros custos:</strong> Estacionamento, pedágios, lavagens, etc.
+                  </li>
+                </ul>
+                <p className="text-gray-600 mt-2">
+                  A soma de todos esses valores representa o custo total anual para manter o veículo.
                 </p>
               </AccordionContent>
             </AccordionItem>

@@ -23,7 +23,7 @@ export function InformacoesRelevantes() {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">Informações Relevantes</h2>
+        <h2 className="text-3xl font-bold text-center mb-10 text-black">Informações Relevantes</h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
           <Card>

@@ -1,6 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
+import { ChevronDown } from "lucide-react"
 
 export function HeroSection() {
   const scrollToCalculator = () => {
@@ -14,7 +15,7 @@ export function HeroSection() {
     <section className="relative h-[500px] md:h-[600px] overflow-hidden">
       <div className="absolute inset-0 bg-black/40 z-10"></div>
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-center blur-[2px]"
         style={{
           backgroundImage:
             "url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1920&auto=format&fit=crop')",
@@ -28,8 +29,12 @@ export function HeroSection() {
           <p className="text-lg md:text-xl mb-8 text-gray-100">
             Considere combustível, seguro, IPVA, manutenção e depreciação em poucos cliques.
           </p>
-          <Button onClick={scrollToCalculator} size="lg" className="bg-white text-gray-800 hover:bg-gray-200">
-            Calcular agora
+          <Button
+            onClick={scrollToCalculator}
+            size="lg"
+            className="bg-white text-gray-800 hover:bg-gray-200 flex items-center gap-2"
+          >
+            Calcular agora <ChevronDown className="h-4 w-4" />
           </Button>
         </div>
       </div>
